@@ -1,0 +1,32 @@
+{
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-trailing-underscore",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
+    "jsx-boolean-value": false,
+    "linebreak-style": [false, "LF"],
+    "jsx-no-lambda": false,
+    "no-unused-expression": true,
+    "max-classes-per-file": false,
+    "jsx-no-multiline-js": false,
+    "interface-name": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "no-console": {
+      "severity": "warning"
+    },
+    "max-line-length": [true, 120],
+    "object-literal-key-quotes": [true, "single"],
+    "typedef": [true, "call-signature", "parameter", "member-variable-declaration"]
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts"]
+  }
+}

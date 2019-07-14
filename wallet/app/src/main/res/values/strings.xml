@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Tolling App Wallet</string>
+    <string name="title_activity_file_select">FileSelectActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="set_allowance">Set Allowance</string>
+    <string name="allowance_requestor">Requester Address</string>
+    <string name="request_amount">Request Amount</string>
+    <string name="ethereum_amount">Ethereum Amount</string>
+    <string name="erc20_token_amount">ERC20 Token Amount</string>
+    <string name="tol_balance">Tol Balance</string>
+    <string name="allowance_request">Allowance Request</string>
+    <string name="token">Token</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="an_address_is_requesting_you_to_allow_it_to_transfer_tokens_to_itself">An address is requesting you to allow it to transfer tokens to itself</string>
+    <string name="a_request_for_tokens_has_been_made">A request for tokens has been made</string>
+    <string name="mnemonic">Mnemonic</string>
+    <string name="wallet">Wallet</string>
+    <string name="address">Address</string>
+    <string name="eth_balance">ETH Balance</string>
+</resources>

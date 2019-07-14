@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tolling App Terminal</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="terminal">Terminal</string>
+    <string name="wallet">Wallet</string>
+    <string name="mnemonic">Mnemonic</string>
+    <string name="edit">edit</string>
+</resources>

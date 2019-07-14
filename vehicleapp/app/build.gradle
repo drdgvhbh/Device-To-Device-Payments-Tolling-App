@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "ca.drdgvhbh.vehicleapp"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'org.web3j:core:4.2.0-android'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    // https://mvnrepository.com/artifact/com.google.android.material/material
+    implementation group: 'com.google.android.material', name: 'material', version: '1.1.0-alpha05'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.0.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.8'
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxandroid
+    implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.1.1'
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxkotlin
+    implementation group: 'io.reactivex.rxjava2', name: 'rxkotlin', version: '2.3.0'
+
+
+    // https://mvnrepository.com/artifact/de.hdodenhof/circleimageview
+    implementation group: 'de.hdodenhof', name: 'circleimageview', version: '3.0.0'
+
+    // https://mvnrepository.com/artifact/pl.bclogic/pulsator4droid
+    implementation group: 'pl.bclogic', name: 'pulsator4droid', version: '1.0.3'
+
+
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    kapt 'com.android.databinding:compiler:3.2.0-alpha10'
+
+    // https://mvnrepository.com/artifact/android.arch.persistence.room/runtime
+    implementation group: 'android.arch.persistence.room', name: 'runtime', version: '2.1.0-alpha07'
+
+    implementation 'androidx.room:room-runtime:2.1.0-alpha07'
+    kapt 'androidx.room:room-compiler:2.1.0-alpha07'
+    implementation 'androidx.room:room-rxjava2:2.1.0-alpha07'
+
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    // https://mvnrepository.com/artifact/at.favre.lib/bytes
+    implementation group: 'at.favre.lib', name: 'bytes', version: '1.1.0'
+
+    implementation  'com.github.f0ris.sweetalert:library:1.5.6'
+
+
+
+
+}
